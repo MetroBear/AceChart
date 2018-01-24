@@ -1,2 +1,3 @@
 # AceChart
-gantt and project resource chart
+
+Ajile project gantt and resourcechart.
