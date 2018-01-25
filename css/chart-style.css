@@ -24,13 +24,6 @@
     display: inline-block;
     vertical-align: top
 }
-.gantt_grid {
-    cursor: col-resize;
-    position: absolute;
-    width: 13px;
-    margin-left: -7px;
-    z-index: 1
-}
 
 .gantt_data_area div,
 .gantt_grid div {

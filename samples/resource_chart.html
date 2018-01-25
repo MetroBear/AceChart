@@ -3,13 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
     <title>ResorceChart 0.1</title>
 
-    <link href="//cdn.bootcss.com/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
-    <link href="//cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//cdn.bootcss.com/toastr.js/latest/toastr.min.css" rel="stylesheet">
-    <link href="//cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
-    <link href="css/bootstrap-multiselect.css" rel="stylesheet"> -->
+    <link href="https://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/toastr.js/latest/toastr.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
+    <link href="css/bootstrap-multiselect.css" rel="stylesheet">
     <link href="../css/chart-style.css" rel="stylesheet">
     <style>
         html,
@@ -56,7 +58,7 @@
 </head>
 
 <body style="background-color: #fff;">
-    <div>
+    <div class="container">
         <div class="row graph-header">
             <div class="col-sm-12" style="display: block; padding: 0px 0px 0px 20px; margin-bottom: 15px;" id="spr_div">
                 <div class="col-sm-1 text-center" style="padding: 8px 8px 0 0;">
@@ -103,13 +105,7 @@
             <div class="gantt_grid col-sm-1 text-center" style="padding:0">
                 <div class="gantt_grid_scale grid-scale-line-h">
                     <div class="gantt_grid_head_cell gantt_grid_head_text">
-                        Task name
-                    </div>
-                    <div class="gantt_grid_head_cell gantt_grid_head_start_date">
-                        Start time
-                    </div>
-                    <div class="gantt_grid_head_cell gantt_grid_head_duration">
-                        Duration
+                        Processor
                     </div>
                 </div>
                 <div class="gantt_grid_data" id="graphUserList">
@@ -129,29 +125,30 @@
         </div>
     </div>
     <!-- Mainly scripts -->
-    <script src="//cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
-    <script src="//cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdn.bootcss.com/toastr.js/latest/toastr.min.js"></script>
-    <script src="//cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>
     <script src="../js/resource_chart.js"></script>
     <script>
-        $(document).ready(docReady);
-        toastr.options = {
-            "closeButton": false,
-            "debug": false,
-            "progressBar": true,
-            "preventDuplicates": false,
-            "positionClass": "toast-top-right",
-            "onclick": null,
-            "showDuration": "400",
-            "hideDuration": "1000",
-            "timeOut": "3000",
-            "extendedTimeOut": "1000",
-            "showEasing": "swing",
-            "hideEasing": "linear",
-            "showMethod": "fadeIn",
-            "hideMethod": "fadeOut"
-        }
+        // $(document).ready(docReady);
+        // //toastr config
+        // toastr.options = {
+        //     "closeButton": false,
+        //     "debug": false,
+        //     "progressBar": true,
+        //     "preventDuplicates": false,
+        //     "positionClass": "toast-top-right",
+        //     "onclick": null,
+        //     "showDuration": "400",
+        //     "hideDuration": "1000",
+        //     "timeOut": "3000",
+        //     "extendedTimeOut": "1000",
+        //     "showEasing": "swing",
+        //     "hideEasing": "linear",
+        //     "showMethod": "fadeIn",
+        //     "hideMethod": "fadeOut"
+        // }
     </script>
 </body>
 
