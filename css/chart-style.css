@@ -3,6 +3,39 @@
     create date: 24 Jan 2018
 **/
 
+.graph-header {
+    width: 98%;
+    margin: 1%;
+    margin-bottom: 0;
+    border: 0;
+}
+
+.graph-main {
+    width: 98%;
+    margin: 1%;
+    margin-top: 0;
+    border: 1px solid #cecece;
+}
+
+.grid-scale-line-h {
+    line-height: 30px;
+}
+
+.task-scale-line-h {
+    height: 31px;
+    line-height: 30px;
+}
+
+.task-text-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sprint-info {
+    padding: 8px 0 0;
+    color: #777;
+    text-decoration: underline;
+}
 
 .gantt_container {
     background-color: #fff;
@@ -118,6 +151,7 @@
 }
 
 .gantt_task .gantt_task_scale .gantt_scale_cell {
+    display: inline-block;
     color: #a6a6a6;
     border-right: 1px solid #ebebeb
 }
